@@ -27,6 +27,8 @@ description: >-
   engineering, and partner channels.
 apis: []
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/mks-instruments
   - type: Website
     url: https://www.mks.com/
   - type: Investors
