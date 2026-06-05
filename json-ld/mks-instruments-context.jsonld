@@ -1,0 +1,138 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "mks": "https://www.mks.com/vocabulary#",
+    "qudt": "http://qudt.org/schema/qudt/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+
+    "MKSInstruments": {
+      "@id": "schema:Organization",
+      "@type": "@id"
+    },
+    "name": "schema:name",
+    "url": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "description": "schema:description",
+    "industry": "schema:industry",
+    "foundingDate": "schema:foundingDate",
+    "legalName": "schema:legalName",
+    "sameAs": {
+      "@id": "schema:sameAs",
+      "@type": "@id"
+    },
+
+    "Product": {
+      "@id": "schema:Product",
+      "@type": "@id"
+    },
+    "productCategory": "schema:category",
+    "model": "schema:model",
+    "manufacturer": {
+      "@id": "schema:manufacturer",
+      "@type": "@id"
+    },
+
+    "VacuumSystem": {
+      "@id": "mks:VacuumSystem",
+      "@type": "@id",
+      "@context": {
+        "pressureRange": "mks:pressureRange",
+        "pumpType": "mks:pumpType",
+        "chamberVolume": "mks:chamberVolume",
+        "basePressure": "mks:basePressure"
+      }
+    },
+    "GasDeliverySystem": {
+      "@id": "mks:GasDeliverySystem",
+      "@type": "@id",
+      "@context": {
+        "flowRate": "mks:flowRate",
+        "gasSpecies": "mks:gasSpecies",
+        "massFlowController": "mks:massFlowController",
+        "pressureController": "mks:pressureController"
+      }
+    },
+    "ProcessControl": {
+      "@id": "mks:ProcessControl",
+      "@type": "@id",
+      "@context": {
+        "setpoint": "mks:setpoint",
+        "actualValue": "mks:actualValue",
+        "controlLoop": "mks:controlLoop",
+        "sensor": "mks:sensor"
+      }
+    },
+    "LaserSystem": {
+      "@id": "mks:LaserSystem",
+      "@type": "@id",
+      "@context": {
+        "wavelength": "mks:wavelength",
+        "pulseEnergy": "mks:pulseEnergy",
+        "repetitionRate": "mks:repetitionRate",
+        "beamQuality": "mks:beamQuality",
+        "peakPower": "mks:peakPower"
+      }
+    },
+    "MotionControl": {
+      "@id": "mks:MotionControl",
+      "@type": "@id",
+      "@context": {
+        "axis": "mks:axis",
+        "positionAccuracy": "mks:positionAccuracy",
+        "repeatability": "mks:repeatability",
+        "speed": "mks:speed",
+        "encoder": "mks:encoder"
+      }
+    },
+    "Photonics": {
+      "@id": "mks:Photonics",
+      "@type": "@id",
+      "@context": {
+        "opticalComponent": "mks:opticalComponent",
+        "transmittance": "mks:transmittance",
+        "coatingType": "mks:coatingType",
+        "aperture": "mks:aperture"
+      }
+    },
+    "Measurement": {
+      "@id": "qudt:Quantity",
+      "@type": "@id",
+      "@context": {
+        "value": "qudt:value",
+        "unit": {
+          "@id": "qudt:unit",
+          "@type": "@id"
+        }
+      }
+    },
+    "Instrument": {
+      "@id": "schema:Product",
+      "@type": "@id",
+      "@context": {
+        "serialNumber": "schema:serialNumber",
+        "firmwareVersion": "mks:firmwareVersion",
+        "calibrationDate": "mks:calibrationDate",
+        "communicationInterface": "mks:communicationInterface"
+      }
+    }
+  },
+  "@type": "schema:Organization",
+  "schema:name": "MKS Instruments",
+  "schema:url": "https://www.mks.com/",
+  "schema:description": "Global provider of foundational technology solutions for semiconductor manufacturing, electronics and packaging, and specialty industrial markets.",
+  "schema:industry": [
+    "Semiconductor Manufacturing",
+    "Industrial Technology",
+    "Instrumentation",
+    "Photonics",
+    "Vacuum Technology",
+    "Process Control"
+  ],
+  "schema:sameAs": [
+    "https://www.linkedin.com/company/mks-instruments",
+    "https://ir.mks.com/"
+  ]
+}
