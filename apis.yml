@@ -27,6 +27,10 @@ description: >-
   engineering, and partner channels.
 apis: []
 common:
+  - type: VulnerabilityDisclosure
+    url: security/mks-instruments-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/mks-instruments-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/mks-instruments
   - type: Website
